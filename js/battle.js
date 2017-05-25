@@ -22,15 +22,6 @@
   // Let's selectively bust browser caches
   var buster = '?buster=' + Date.now();
 
-  // Preload the background
-  setTimeout(function() {
-    new ImagePreloader('/images/Imagesmall.jpg', function() {
-      var background = document.getElementById('background');
-      background.classList.add('fadeIn');
-      background.style.backgroundImage = 'url(' + this.src + ')';
-    });
-  }, 128);
-
   // Prevent Typekit flash of unstyled content?
   setTimeout(function() {
     if (!global.fontsAreReady) {
@@ -57,9 +48,19 @@
         });
       }
     });
-  } else {
+  } else if (document.body.classList.contains('day-of-action')) {
     new AJAX({
       url: '/templates/PetitionForm.html' + buster,
+      success: function(e) {
+        new PetitionForm({
+          target: '.form-wrapper',
+          template: e.target.responseText
+        });
+      }
+    });
+  } else {
+    new AJAX({
+      url: '/templates/CommentForm.html' + buster,
       success: function(e) {
         new PetitionForm({
           target: '.form-wrapper',
@@ -150,6 +151,16 @@
     success: function(e) {
       new SimpleSection({
         target: '.extra-reading-target',
+        template: e.target.responseText
+      });
+    }
+  });
+
+  new AJAX({
+    url: '/templates/Countdown.html' + buster,
+    success: function(e) {
+      new SimpleSection({
+        target: '.countdown-target',
         template: e.target.responseText
       });
     }

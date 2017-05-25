@@ -93,12 +93,13 @@ p {
 }
 
 #background {
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 729px;
-    position: absolute;
-    width: 100%;
+  background-image: url('/images/Imagesmall.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 729px;
+  position: absolute;
+  width: 100%;
 }
 
 .light {
@@ -1935,4 +1936,107 @@ input{
     width: 100%;
     margin: 0 0 15px;
   }
+}
+
+.day-of-action #battle, .day-of-action p {
+  color: #000;
+}
+
+.day-of-action #background {
+  background: #ddd;
+}
+
+.day-of-action h1 {
+  text-transform: uppercase;
+}
+
+.day-of-action h1 strong {
+  color: #ff3434;
+}
+
+.day-of-action .form {
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.day-of-action .form form main {
+  padding: 0 20px;
+}
+
+.day-of-action .form form input {
+  min-height: 64px;
+  margin: 10px;
+  border: 1px solid #b8b8b8;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: normal;
+  flex: 2;
+}
+
+.day-of-action .form form input:first-child {
+  margin-left: 0;
+}
+
+.day-of-action .form form input:last-child {
+  margin-right: 0;
+}
+
+.day-of-action .form form input[name="member[postcode]"] {
+  flex: 1;
+}
+
+/* These selectors only work when declared separately for some buggy reason */
+.day-of-action form ::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+
+.day-of-action form ::-moz-placeholder {
+  color: #b8b8b8;
+  opacity: 1;
+}
+
+.day-of-action form :-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+.day-of-action form ::placeholder {
+  color: #b8b8b8;
+}
+
+.day-of-action form input:focus {
+  background-color: #fdd;
+}
+
+.day-of-action .form form footer {
+  background-color: transparent;
+}
+
+.day-of-action .form form button {
+  border-radius: 0;
+  background: #ff3434;
+  text-shadow: none;
+}
+
+.day-of-action .form form footer .disclaimer {
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.day-of-action .form form footer .disclaimer a {
+  color: #ff3434;
+}
+
+.countdown {
+  background-color: #4e4e4e;
+}
+
+.countdown p {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
 }

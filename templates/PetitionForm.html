@@ -1,35 +1,13 @@
-<div class="your-senators-target"></div>
-
-<section id="fftf-petition" class="form shadow">
+<section class="form">
   <form method="post" action="https://queue.fightforthefuture.org/action" accept-charset="UTF-8">
-    <header>
-      <h3>Write the FCC & Congress now!</h3>
-      <p>Tell the FCC to protect net neutrality&mdash;and tell Congress to oppose Ajit Pai's plan.</p>
-    </header>
-    <div class="left">
-      <label for="name">Full Name</label>
+    <main>
       <input type="text" name="member[first_name]" placeholder="Full Name" title="Full Name" autocomplete="name" required>
-      <label for="email_addr">Email Address</label>
       <input type="email" name="member[email]" placeholder="Email" title="Email" required>
-      <div class="flex">
-        <label for="addr">Address</label>
-        <input type="text" name="member[street_address]" class="input-address" placeholder="Street Address" title="Street Address" required>
-        <label for="zip">Zip Code</label>
-        <input type="text" name="member[postcode]" class="input-zip" placeholder="ZIP" title="ZIP" required size="5" pattern="[0-9]{5}">
-      </div>
-    </div>
-    <div class="right">
-      <input type="hidden" name="subject" value="Protect Net Neutrality!"/>
-      <label for="comment">Comment</label>
-      <div class="textarea-wrapper">
-        <textarea name="action_comment" title="Comment" required>The FCC's Open Internet Rules (net neutrality rules) are extremely important to me. I urge you to protect them.&#013;&#010;&#013;&#010;I don't want ISPs to have the power to block websites, slow them down, give some sites an advantage over others, or split the Internet into "fast lanes" for companies that pay and "slow lanes" for the rest.&#013;&#010;&#013;&#010;Now is not the time to let giant ISPs censor what we see and do online.&#013;&#010;&#013;&#010;Censorship by ISPs is a serious problem. Comcast has throttled Netflix, AT&T blocked FaceTime, Time Warner Cable throttled the popular game League of Legends, and Verizon admitted it will introduce fast lanes for sites that pay-and slow lanes for everyone else-if the FCC lifts the rules. This hurts consumers and businesses large and small.&#013;&#010;&#013;&#010;Courts have made clear that if the FCC ends Title II classification, the FCC must let ISPs offer "fast lanes" to websites for a fee.&#013;&#010;&#013;&#010;Chairman Pai has made clear that he intends to do exactly this.&#013;&#010;&#013;&#010;But if some companies can pay our ISPs to have their content load faster, startups and small businesses that can't pay those fees won't be able to compete. You will kill the open marketplace that has enabled millions of small businesses and created the 5 most valuable companies in America-just to further enrich a few much less valuable cable giants famous for sky-high prices and abysmal customer service.&#013;&#010;&#013;&#010;Internet providers will be able to impose a private tax on every sector of the American economy.&#013;&#010;&#013;&#010;Moreover, under Chairman Pai's plan, ISPs will be able to make it more difficult to access political speech that they don't like. They'll be able to charge fees for website delivery that would make it harder for blogs, nonprofits, artists, and others who can't pay up to have their voices heard.&#013;&#010;&#013;&#010;I'm sending this to the FCC's open proceeding, but I worry that Chairman Pai, a former Verizon lawyer, has made his plans and will ignore me and millions of other Americans.&#013;&#010;&#013;&#010;So I'm also sending this to my members of Congress. Please publicly support the FCC's existing net neutrality rules based on Title II, and denounce Chairman Pai's plans. Do whatever you can to dissuade him.&#013;&#010;&#013;&#010;Thank you!</textarea>
-        <div class="textarea-fade">
-          <span class="edit">Clear & write your own</span>
-        </div>
-      </div>
-    </div>
+      <input type="text" name="member[postcode]" class="input-zip" placeholder="ZIP" title="ZIP" required size="5" pattern="[0-9]{5}">
+    </main>
+
     <footer>
-      <button type="submit">Submit Your Comment</button>
+      <button type="submit" class="shadow">Join the Protest</button>
       <div class="disclaimer">
         <div class="org fp hidden">The information submitted here will be transmitted to the FCC, which may post your name and street address in a searchable database. <a href="https://www.freepress.net/" target="_blank">Free Press</a> will contact you about future campaigns. <a href="/privacy/" target="_blank">Privacy Policy</a></div>
         <div class="org dp hidden">The information submitted here will be transmitted to the FCC, which may post your name and street address in a searchable database. <a href="https://demandprogress.org/" target="_blank">Demand Progress</a> will contact you about future campaigns. <a href="/privacy/" target="_blank">Privacy Policy</a></div>
@@ -46,8 +24,6 @@
     <input class="hidden" type="text" name="guard" />
 
     <!-- Mothership -->
-    <input type="hidden" name="contact_congress" value="1"/>
-    <input type="hidden" name="fcc_ecfs_docket" value="17-108"/>
     <input type="hidden" name="org" value="fftf"/>
 
     <!-- Action Network -->

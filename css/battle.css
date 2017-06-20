@@ -89,6 +89,10 @@ p {
   background-color: #1c1c25;
 }
 
+.battle strong {
+  font-weight: 800;
+}
+
 .battle p.please-wait {
     color: #5d5d7a;
     opacity: 0 !important;
@@ -463,8 +467,9 @@ p {
     padding: 16px 25px 64px;
 }
 #team-cable h2 {
-
+padding-bottom: 24px;
 }
+
 #team-cable p {
     color: #eee;
     font-size: 22px;
@@ -586,7 +591,10 @@ p {
     font-weight: bold;
     padding: 16px 25px 64px;
 }
-#how-we-won h2 {}
+#how-we-won h2 {
+  padding-bottom: 24px;
+}
+
 #how-we-won p {
     color: #eee;
     font-size: 22px;
@@ -797,8 +805,10 @@ section .btn:hover, button:hover {
     margin-bottom: 36px;
 }
 #extra-reading p {
-    margin-top: 0;
+    margin: 7px auto;
+    padding: 0;
 }
+
 #extra-reading p a {
     color: #20cba1;
     font-size: 16px;
@@ -2285,4 +2295,10 @@ color: red;
 
 .day-of-action .modal a {
   color: #fff;
+}
+
+.participants h4{
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 10px 10px 40px 10px;
 }
